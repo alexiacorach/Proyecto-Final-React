@@ -1,0 +1,13 @@
+.containerVeterinario{
+    background-color: #f1dce9;
+}
+
+.containerVeterinario:focus{
+    background-color: rgb(27, 204, 27);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.custom-italic {
+    font-style: italic;
+  }

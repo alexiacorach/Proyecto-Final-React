@@ -21,7 +21,7 @@ function Navegador() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="/Home" className="p-2 fs-3">Inicio</Nav.Link>
+            <Nav.Link href="/" className="p-2 fs-3">Inicio</Nav.Link>
 
             <Nav.Link href="/Razas" className="p-2 fs-3">Razas</Nav.Link>
 
