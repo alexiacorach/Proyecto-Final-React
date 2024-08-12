@@ -21,11 +21,11 @@ function Navegador() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link to="/" className="p-2 fs-3">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/" className="p-2 fs-3">Inicio</Nav.Link>
 
-            <Nav.Link to="/Razas" className="p-2 fs-3">Razas</Nav.Link>
+            <Nav.Link as={Link} to="/razas" className="p-2 fs-3">Razas</Nav.Link>
 
-            <Nav.Link to="/Veterinarios" className="p-2 fs-3">Nuestros Vets</Nav.Link>
+            <Nav.Link as={Link} to="/veterinarios" className="p-2 fs-3">Nuestros Vets</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

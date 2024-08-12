@@ -37,15 +37,15 @@ function Footer() {
 
         <Col md="auto" className="text-center">
           <Nav className="flex-column fs-5">
-            <Nav.Link href="/" className="text-danger p-1 fs-5">
+            <Nav.Link to="/" className="text-danger p-1 fs-5">
               Inicio
             </Nav.Link>
 
-            <Nav.Link href="/Razas" className="text-danger p-1 fs-5">
+            <Nav.Link to="/razas" className="text-danger p-1 fs-5">
               Razas
             </Nav.Link>
 
-            <Nav.Link href="/Veterinarios" className="text-danger p-1 fs-5">
+            <Nav.Link to="/veterinarios" className="text-danger p-1 fs-5">
               Nuestros Vets
             </Nav.Link>
           </Nav>
