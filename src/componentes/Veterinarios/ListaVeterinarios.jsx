@@ -208,7 +208,7 @@ const ListaVeterinarios = () => {
   );
 
   return (
-    <Container className="my-5 containerVeterinario p-4 shadow-lg p-3 mb-5 rounded;" style={{ width: "100%" }}>
+    <Container className="containerVeterinario p-4 shadow-lg p-3 mb-5 rounded;" style={{ width: "100%" }}>
       <div className="text-center mb-4">
         <h1 className="text-center text-danger mb-2">Veterinarias 24 horas en Villa Crespo</h1>
         <span className="text-center fs-5">

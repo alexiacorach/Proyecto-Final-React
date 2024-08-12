@@ -1,16 +1,102 @@
 .bodyhome {
     display: grid;
+    grid-template-areas:
+        "objetivos objetivos"
+        "boxmodel sugerencias"
+        "carrusel sugerencias";
+    grid-template-columns: 3fr 1fr;
+    /* La columna 1 ocupa 2 fracciones del espacio y la columna 2 (sugerencias) ocupa 1 fracción */
+    gap: 0.5rem;
+    background-color: rgba(240, 219, 232, 0.932);
+    margin-bottom: 0;
+    padding: 1rem;
+}
+
+.objetivos {
+    background-color: rgba(240, 219, 232, 0.932);
+    grid-area: objetivos;
+    padding: 1rem;
+    
+}
+
+.boxmodel {
+    background-color: rgba(240, 219, 232, 0.932);
+    grid-area: boxmodel;
+    display: block;
+
+}
+
+.boxmodel1,
+.boxmodel2 {
+    background-color: rgb(240, 195, 223);
+    padding: 1rem;
+    margin: 1.8rem 0;
+    overflow: auto;
+    border: solid 1px pink;
+    width: 100%;
+}
+
+.sugerencias {
+    background-image: linear-gradient(rgb(241, 158, 209), rgb(245, 230, 239));
+    grid-area: sugerencias;
+    padding: 2rem;
+    margin: 1.8rem 0;
+    line-height: 2.5rem;
+}
+
+
+.carousel-container {
+    grid-area: carrusel;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    padding: 0.5rem;
+}
+
+.carouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    height: auto;
+    width: 100%;
+}
+
+.carousel-image {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    max-width: 90%;
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-italic {
+    font-style: italic;
+}
+/* .bodyhome {
+    display: grid;
     grid-template-areas: 
         "carrusel carrusel"
         "objetivos objetivos"
         "boxmodel sugerencias"
         ;
-    grid-template-columns: 2fr 1fr; /* La columna 1 ocupa 2 fracciones del espacio y la columna 2 (sugerencias) ocupa 1 fracción */
+    grid-template-columns: 2fr 1fr; 
     background-color: rgba(240, 219, 232, 0.932);
     margin-bottom: 0;
     padding: 1rem;
     height: 100%;
-    align-items: end;
+    box-sizing: border-box;
 }
 
 .objetivos {
@@ -23,17 +109,18 @@
     background-color: rgba(240, 219, 232, 0.932);
     grid-area: boxmodel;
     display: block;
-    padding: 1rem;
+    padding: 1rem ;
 }
 
 .boxmodel1,
 .boxmodel2 {
     background-color: rgb(240, 195, 223);
     padding: 1rem;
-    margin: 0.3rem 0;
+    margin: 2rem 0;
     overflow: auto;
-    border: solid 1px black;
+    border: solid 1px rgb(109, 108, 108);
     width: 100%;
+    display: inline-block;
 }
 
 .sugerencias {
@@ -41,6 +128,8 @@
     grid-area: sugerencias;
     padding: 2.2rem;
     line-height: 2.5rem;
+    border: solid 1px rgb(109, 108, 108);
+    margin: 3rem 1rem 3rem 1rem;
 }
 
 .carousel-container {

@@ -1,121 +1,45 @@
-.bodyhome-razas{
+.bodyhome-razas {
   background-color: #f1dce9;
   height: 100%;
   padding: 1rem 2rem;
   font-size: 0.9rem;
 }
-.h3-razas{
+
+.h3-razas {
   display: grid;
   text-align: center;
 }
+
 .cat-info {
-  text-align: center; 
+  text-align: center;
   margin-top: 20px;
 }
 
 .breed-details {
-  background-color: #f0f4f8; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
-  margin-top: 1rem; 
-  }
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra para el contenedor */
+  margin-top: 1rem;
+}
 
 .breed-details h2 {
-  margin: 10px 0 5px; 
-  color: #333; 
+  margin: 10px 0 5px;
+  color: #333;
 }
 
-.breed-details p { 
-  color: #555; 
-  line-height: 1.5; 
+.breed-details p {
+  color: #555;
+  line-height: 1.5;
 }
 
-  
-  .cat-image {
-    max-width: 18rem;
-    max-height: 18rem;
-    border-radius: 0.5rem;
-    margin: 1rem;
-    text-align: center;
-    display: flex;
-    
-  }
-  
-  
-/*
-.bodyhome2 {
-    display: grid;
-    grid-template-areas:
-        "encabezadoRazas encabezadoRazas"
-        "imgA textimgA"
-        "imgB textimgB"
-        "imgC textimgC"
-        "imgD textimgD";
-        grid-column: 1fr 1fr;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
-        height: 100vh;
-        column-gap: none;
-        row-gap: 1rem;
-    
-}
-.encabezadoRazas{
-    grid-area: encabezadoRazas;
-}
-.imgA {
-    grid-area: imgA;
-    background-color: rgb(240, 195, 223);
-}
 
-.textimgA {
-    grid-area: textimgA;
-    background-color: rgb(240, 195, 223);
+.cat-image {
+  max-width: 100rem;
+  max-height: 100rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  padding-right: 2rem;
 }
-
-.imgB {
-    grid-area: imgB;
-    background-color: rgb(240, 195, 223);
-}
-
-.textimgB {
-    grid-area: textimgB;
-    background-color: rgb(240, 195, 223);
-}
-
-.imgC {
-    grid-area: imgC;
-    background-color: rgb(240, 195, 223);
-}
-
-.textimgC {
-    grid-area: textimgC;
-    background-color: rgb(240, 195, 223);
-}
-
-.imgD {
-    grid-area: imgD;
-    background-color: rgb(240, 195, 223);
-}
-
-.textimgD {
-    grid-area: textimgD;
-    background-color: rgb(240, 195, 223);
-}
-
-.imgRazas {
-    padding: 0.5rem;
-    width: 90%;
-}
-
-.imgRazas img {
-    width: 100%;
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-.textRazas {
-    font-size: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    margin-right: 0.4rem;
-    float: right;
-} 

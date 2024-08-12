@@ -1,5 +1,4 @@
 import "./Home.css";
-import Carrusel from "./Carrusel.jsx";
 import Carousel from "react-bootstrap/Carousel";
 import imagenUno from "../../assets/imgCarrusel/imagenUno.jpg";
 import imagenDos from "../../assets/imgCarrusel/imagenDos.jpg";
@@ -8,19 +7,21 @@ import imagenCuatro from "../../assets/imgCarrusel/imagenCuatro.jpg";
 import imagenCinco from "../../assets/imgCarrusel/imagenCinco.jpg";
 import imagenSeis from "../../assets/imgCarrusel/imagenSeis.jpg";
 import imagenSiete from "../../assets/imgCarrusel/imagenSiete.jpg";
-
+import Carrusel from "./Carrusel.jsx";
 import Container from "react-bootstrap/Container";
+import React, { useEffect } from 'react';
+
 
 function Home() {
+
   return (
     <div className="bodyhome">
-      <Carrusel className="carousel-container" /> 
-      <br />
       <section className="objetivos">
-        <h1 className="text-danger text-center mb-4">
+        <h1 className="text-danger text-center mb-4 wow animate__animated animate__fadeIn">
           ¡Bienvenido a la página de felinos!
         </h1>
-        <p className="fs-5 custom-italic">
+        <Carrusel className="carousel-container" />
+        <p className="fs-5 custom-italic p-5 pb-0">
           Somos amantes de los animales y queremos compartir nuestra sabiduría
           sobre los gatos para ayudar a las personas que busca adoptar un nuevo
           integrante en la familia. Te invitamos a conocer el mundo de estos
@@ -33,7 +34,7 @@ function Home() {
       <section className="boxmodel">
         <div className="boxmodel1">
           <h2>Historia y Orígenes</h2>
-          <p className="fs-6 custom-italic">
+          <p className="fs-5 custom-italic">
             Los gatos comparten un antepasado común probablemente relacionado
             con los Aitanis. Los Aitanis era pequeños carnívoros de los bosques
             que aparecieron hace alrededor de 60 millones de años. Tenían un
@@ -87,41 +88,41 @@ function Home() {
         <h3>Libros Útiles</h3>
         <div className="listaLibros">
           <ul>
-            <li className="link-danger fs-5">Soy un gato, de Soseki Natsume (Editorial Impedimenta)</li>
-            <li className="link-danger fs-5">Podría hacer pis aquí, Francesco Marciuliano</li>
-            <li className="link-danger fs-5">Elogio del gato, de Stephanie Hochet (Periférica ed.)</li>
-            <li className="link-danger fs-5">Gatos ilustres, de Doris Lessing (editorial Lumen)</li>
-            <li className="link-danger fs-5">
+            <li className="link-danger fs-6">Soy un gato, de Soseki Natsume (Editorial Impedimenta)</li>
+            <li className="link-danger fs-6">Podría hacer pis aquí, Francesco Marciuliano</li>
+            <li className="link-danger fs-6">Elogio del gato, de Stephanie Hochet (Periférica ed.)</li>
+            <li className="link-danger fs-6">Gatos ilustres, de Doris Lessing (editorial Lumen)</li>
+            <li className="link-danger fs-6">
               Cómo saber si tu gato planea matarte, de The Oatmeal (editorial
               Astiberri)
             </li>
           </ul>
         </div>
-        <h3>Enlace Útiles</h3>
+        <h3>Enlaces Útiles</h3>
         <div className="listaLibros">
           <ul>
             <li>
-              <a className="link-danger fs-5" href="https://www.cosasdegatos.es/curiosidades-gatos/que-es-bolsa-primordial-gatos">
+              <a className="link-danger fs-6" href="https://www.cosasdegatos.es/curiosidades-gatos/que-es-bolsa-primordial-gatos">
                 ¿Qué tiene mi gato en la panza?
               </a>
             </li>
             <li>
-              <a className="link-danger fs-5" href="https://www.cosasdegatos.es/enfermedades-salud-gatos/gatos-estres-sintomas-tratamiento">
+              <a className="link-danger fs-6" href="https://www.cosasdegatos.es/enfermedades-salud-gatos/gatos-estres-sintomas-tratamiento">
                 Gatos y estrés
               </a>
             </li>
             <li>
-              <a className="link-danger fs-5" href="https://purina.com.mx/purina/gatos/vacunas-para-gato">
+              <a className="link-danger fs-6" href="https://purina.com.mx/purina/gatos/vacunas-para-gato">
                 Vacunar a mi gato
               </a>
             </li>
             <li>
-              <a className="link-danger fs-5" href="https://www.instagram.com/cat.cafe.buenosaires/?hl=es">
+              <a className="link-danger fs-6" href="https://www.instagram.com/cat.cafe.buenosaires/?hl=es">
                 Café con gatos, una opción diferente
               </a>
             </li>
             <li>
-              <a className="link-danger fs-5" href="https://www.veterinarias.com.ar/refugios-adopcion-animales.html">
+              <a className="link-danger fs-6" href="https://www.veterinarias.com.ar/refugios-adopcion-animales.html">
                 Refugios y centros de adopción
               </a>
             </li>
@@ -129,7 +130,7 @@ function Home() {
         </div>
       </aside>
 
-     
+
     </div>
   );
 }
