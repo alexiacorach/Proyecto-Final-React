@@ -18,7 +18,7 @@ function Home() {
     <div className="bodyhome">
       <section className="objetivos">
         <h1 className="text-danger text-center mb-4 wow animate__animated animate__fadeIn">
-          ¡Bienvenido a la página de felinos!
+          ¡BIENVENIDOS A LA PÁGINA  N° 1 EN FELINOS!
         </h1>
         <Carrusel className="carousel-container" />
         <p className="fs-5 custom-italic p-5 pb-0">
